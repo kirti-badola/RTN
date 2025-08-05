@@ -1,0 +1,67 @@
+Competitors :
+https://www.bearrobotics.ai/
+https://www.pudurobotics.com/en/products
+https://en.autoxing.com/solution
+
+--------
+
+Font : poppins for heading and inter for text
+
+color : 
+
+Border : #C9C9C9
+light bg (left side) : #FCFCFC
+Primary : #04A658
+
+------------
+
+Learning Webflow
+
+General : 
+limited fonts available in free version : we need to upload custom font file
+
+
+Forms : 
+
+1. Placeholder color changes : custom CSS
+2. select box (right arrow spacing) : custom CSS
+3. Date time picker : https://www.youtube.com/watch?v=5eNqRhI7B40
+
+--------
+
+only works with lower case letters
+“space” to add a space to it
+“backspace” to delete the entire input
+“enter” to go from focused to default state
+
+---------------
+
+
+Notion and vision
+
+https://www.instagram.com/notionhq/
+https://www.instagram.com/transunion
+
+Material you icons
+
+https://www.enhancor.ai/ -> Enhancor - AI image to natural image
+
+https://suryapratapnayak.webflow.io/
+
+------------
+
+Marketing:
+
+https://www.instagram.com/doordash/?hl=en
+https://www.instagram.com/googlepay/?hl=en
+https://www.instagram.com/phonepe/?hl=en
+https://www.instagram.com/venmo/?hl=en
+
+
+
+
+
+
+
+
+

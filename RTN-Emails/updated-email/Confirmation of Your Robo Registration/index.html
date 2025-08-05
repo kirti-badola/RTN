@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Your LAI Pro Trial</title>
+    <style>
+        body {
+            font-family: "Inter", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .email-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+        }
+
+        .header {
+            background-color: #04A658;
+            padding: 30px;
+            padding-top: 30px;
+            box-shadow: 0px 7px 0px #0B5524;
+            padding-bottom: 30px;
+
+            color: white;
+        }
+
+        .header img {
+            max-width: 180px;
+        }
+
+        .content {
+            padding: 30px;
+            padding-top: 15px;
+        }
+
+        .black-text {
+            color: #0B5524;
+            font-weight: 500;
+        }
+
+        .content h1 {
+            color: #000;
+            font-size: 1.8rem;
+            padding-bottom: 10px;
+        }
+
+        .content h2 {
+            color: #000;
+            font-size: 1.6rem;
+            padding: 0 0 1.5rem;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        .content h3 {
+            color: #000;
+            font-size: 1.5rem;
+            padding: 1.2rem 0 0;
+            margin: 0;
+        }
+
+        .content p {
+            line-height: 1.5;
+            color: #45494e;
+        }
+
+        .content .credentials {
+            background-color: #f4f4f4;
+            padding: 0px 10px 0px 15px;
+            margin: 20px 0;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+        }
+
+        .robo-promo {
+            background-color: #f5f6ff;
+            padding: 10px 20px;
+            color: #45494e;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        .robo-promo img {
+            border-radius: 7px;
+        }
+
+        /* what next table start */
+        .table-steps {
+            margin-bottom: 1.5rem;
+        }
+
+        .info-box {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f5f6ff;
+            border-radius: 8px;
+            border: 1px solid hsla(140, 77%, 19%, 0.458);
+        }
+
+        .info-table {
+            width: 100%;
+        }
+
+        .circle-number {
+            background-color: #04A658;
+            color: #fff;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            text-align: center;
+            line-height: 24px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .title {
+            padding-left: 5px;
+            color: #000;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .desc {
+            padding-top: 10px;
+            color: #45494e;
+            line-height: 1.5;
+        }
+
+        /* what next table end */
+
+        /* payment and plan start */
+        .table-wrapper {
+            padding-top: 1.5rem;
+        }
+
+        .robo-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+            background: #ffffff;
+            border: 1px solid #dddddd;
+            overflow: hidden;
+        }
+
+        .robo-table th {
+            background: #f5f6ff;
+            text-align: left;
+            padding: 10px;
+            border: 1px solid #dddddd;
+            font-weight: 600;
+        }
+
+        .robo-table td {
+            background: #ffffff;
+            padding: 10px;
+            border: 1px solid #dddddd;
+            color: #45494e;
+        }
+
+        /* payment and plan end */
+
+
+        .container-table {
+            width: 100%;
+        }
+
+        .titan-left {
+            width: 75%;
+            text-align: left;
+        }
+
+        .titan-right {
+            width: 50%;
+        }
+
+        .titan-img {
+            width: 100%;
+            height: auto;
+        }
+
+        .cta-table {
+            text-align: center;
+            background: #f5f6ff;
+            width: 100%;
+            border-radius: 10px;
+            padding-left: 22px;
+            padding-right: 20px;
+        }
+
+        .left-cell {
+            width: 65%;
+            text-align: left;
+            padding: 20px 0 30px;
+        }
+
+        .call-icon,
+        .mail-icon {
+            vertical-align: middle;
+        }
+
+        .phone-link,
+        .mail-link {
+            color: #0B5524;
+            font-size: 1.1rem;
+            font-weight: 500;
+            text-decoration: none;
+
+        }
+
+        .right-cell {
+            width: 50%;
+        }
+
+        .support {
+            width: 70%;
+            height: auto;
+        }
+
+        .footer {
+            border-top: 1px solid #f4f4f4;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #45494e;
+        }
+
+        .footer div {
+            flex: 1 1 100%;
+
+        }
+
+        .footer .contact-info {
+            flex: 1 1 50%;
+        }
+
+        .footer .app-icons {
+            flex: 1 1 100%;
+            display: flex;
+            justify-content: start;
+            flex-wrap: wrap;
+        }
+
+        .footer .app-icons img {
+            max-width: 140px;
+            margin: 0 10px 0px 0px;
+        }
+
+        .footer a {
+            color: #0B5524;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            .robo-container {
+                width: 100%;
+                border: none;
+            }
+
+            .header,
+            .content,
+            .footer {
+                padding: 15px;
+            }
+
+            .footer div {
+                flex: 1 1 100%;
+                text-align: center;
+            }
+
+            .footer .contact-info {
+                text-align: center;
+            }
+
+            .footer .app-icons img {
+                max-width: 100px;
+                margin: 0 5px 0 0;
+            }
+
+            .footer .app-icons {
+                flex: 1 1 100%;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="email-container">
+        <div class="header">
+            <img src="asset/logo.png" alt="RTN Display">
+        </div>
+        <div class="content">
+            <h1>Confirmation of Your RTN Robo Registration</h1>
+
+            <p>Hi <span class="black-text"> [Customer Name],</span></p>
+            <p>Your registration is complete, and your Rhea robot is now officially on the move. We’re glad to have you
+                with us and look forward to helping you run smoother, faster, and more efficiently.</p>
+
+            <h3>What Happens Next</h3>
+
+            <!-- table for what next start -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" class="table-steps">
+                <tr>
+                    <td align="center">
+                        <div class="container">
+
+                            <!-- Block 1 -->
+                            <div class="info-box">
+                                <table class="info-table" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td valign="top" style="width: 30px;">
+                                            <span class="circle-number">1</span>
+                                        </td>
+                                        <td class="title">Order Confirmed</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" class="desc">
+                                            Your robot is being prepped for delivery. We’ll be in touch shortly to
+                                            schedule the setup.
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <!-- Block 2 -->
+                            <div class="info-box">
+                                <table class="info-table" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td valign="top" style="width: 30px;">
+                                            <span class="circle-number">2</span>
+                                        </td>
+                                        <td class="title">Training & Launch Support</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" class="desc">
+                                            Our team will train your staff and support you through your first week to
+                                            make sure everything runs smoothly.
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <!-- Block 3 -->
+                            <div class="info-box">
+                                <table class="info-table" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td valign="top" style="width: 30px;">
+                                            <span class="circle-number">3</span>
+                                        </td>
+                                        <td class="title">Invoice Attached</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" class="desc">
+                                            Includes payment plan details, total value, and plan type.
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <!-- table for what next start -->
+
+
+            <h3>Payment & Plan Summary</h3>
+
+            <!-- table for payment and plan start -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="table-wrapper">
+                        <table class="robo-table">
+                            <thead>
+                                <tr>
+                                    <th>Registration Date</th>
+                                    <th>Product</th>
+                                    <th>Plan Chosen</th>
+                                    <th>Payment Method</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>6/26/2025</td>
+                                    <td>Rhea</td>
+                                    <td>Lease</td>
+                                    <td>****5678</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!-- table for payment and plan end -->
+
+            <p>If your plan has recurring payments, it will renew automatically using your saved method. Reach out
+                anytime if you'd like to update payment info or make changes to your plan.</p>
+
+
+            <Div class="robo-promo">
+                <br>
+                <a href=""> <img src="Rhea.jpg" width="100%" alt=""> </a>
+                <h3> Meet Rhea – Your 7-in-1 Service Robot </h3>
+
+                <p>
+
+                    ● Dual screens for order taking, payment, and advertising <br>
+                    ● Safe, efficient navigation with 360° LiDAR and face recognition <br>
+                    ● 10-hour battery for all-day shifts <br>
+                    ● Real-time performance data and maintenance alerts <br>
+                    ● Free software updates and 24/7 monitoring <br>
+
+                </p>
+
+                <!-- titan table start -->
+                <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td>
+                            <table class="titan-table" cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="titan-left">
+                                            <h3>Ready to Automate Even More?</h3>
+                                            <p>When you’re ready to expand, add <b> Titan</b>—our warehouse robot that
+                                                works in sync with Rhea to
+                                                handle back-of-house tasks. Just let us know and we’ll help you build
+                                                your full automation setup.
+                                            </p>
+                                        </td>
+                                        <td class="titan-right">
+                                            <img class="titan-img" src="Titan.jpg" alt="image" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <!-- titan table end -->
+
+            </Div>
+
+            <br>
+
+            <h3>Attached to This Email</h3>
+            <p>
+                ● Your Invoice (includes payment cycle and plan summary) <br>
+                ● Subscription Terms & Conditions
+            </p>
+
+            <!-- cta table start -->
+            <table class="container-table" cellpadding="0" cellspacing="0" border="0"
+                style="margin-bottom: 2rem; margin-top: 2rem;">
+                <tr>
+                    <td>
+                        <table class="cta-table" cellpadding="0" cellspacing="0" border="0">
+                            <tbody>
+                                <tr>
+                                    <td class="left-cell">
+                                        <h2>Need Help?</h2>
+
+                                        <!-- <img src="call-icon.png" alt="" class="call-icon" width="24" height="24" /> -->
+                                        <a class="phone-link" href="tel:1-478-396-1776">1-478-396-1776</a>
+
+                                        <div style="margin-top: 0.8rem;">
+                                            <!-- <img src="mail-icon.png" alt="" class="mail-icon" width="24" height="24" /> -->
+                                            <a class="mail-link"
+                                                href="mailto:admin@realtnetworking.com">admin@realtnetworking.com</a>
+                                        </div>
+                                    </td>
+                                    <td class="right-cell">
+                                        <img class="support" src="support.png" alt="image" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!-- cta table end -->
+
+            <p>Warm regards,</p>
+            <p style="padding: 0; margin: 0;"><b>Jipal Bhalodwala</b> <br>
+                CEO & Founder<br>RTN ROBO (RealTime Networking LLC) </p>
+        </div>
+        <div class="footer">
+            <p>© 2025 RealTime Networking LLC. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>
